@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário 1</title>
+</head>
+<body>
+    <h2>Formulário de Adesão</h1>
+    <p>Nós oferecemos uma opção de filiação sob medida para atender às suas necessidades específicas. Para se inscrever, por favor, complete e envie o Formulário de Adesão abaixo. Se você deseja maiores informações sobre a filiação em nossa organização ou sobre o processo de inscrição, por favor, especifique as suas questões na cixa de comentário abaixo.</p>
+
+    <br />
+    <br />
+    <hr>
+    <br />
+    <br />
+    <br />
+    
+    <table>
+        <tr>
+            <td>
+                <label for="nome">Nome*</label>
+            </td>
+            <td>
+                <input type="text"
+                id="nome"
+                name="nome"
+                required
+                placeholder="First">
+
+                <input type="text"
+                id="sobrenome"
+                name="sobrenome"
+                required
+                size="23"
+                placeholder="Last">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Email">Email*</label>
+            </td>
+            <td>
+                <input type="email"
+                name="email"
+                id="email"
+                required
+                size="49">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="telefone">Telefone</label>
+            </td>
+            <td>
+                <input type="tel"
+                name="telefone"
+                id="telefone"
+                placeholder="#### #### #####"
+                size="49">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="endereco">Endereço</label></td>
+            <td>
+                <input type="endereco"
+                name="endereco"
+                id="endereco"
+                placeholder="Street Address"
+                size="49">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <label for="cidade"></label>
+                <input type="text"
+                name="cidade"
+                id="cidade"
+                placeholder="City">
+                <label for="estado"></label>
+                <input type="text"
+                name="estado"
+                id="estado"
+                size="23"
+                placeholder="State">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <label for="cep"></label>
+                <input type="text"
+                name="cep"
+                id="cep"
+                placeholder="Postal / Zip Code">
+
+                <label for="pais"></label>
+                <select
+                name="pais"
+                id="pais"
+                size="1"
+                placeholder="County">
+                    <option value="" disable selected hidden>Country</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="China">China</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="planos">Planos de Adesão*</label>
+            </td>
+            <td>
+                <input type="radio"
+                name="plano"
+                id="plano1"
+                required
+                value="prata"> Padrão(R$200/Ano) 
+
+                <input type="radio"
+                name="plano"
+                id="plano2"
+                value="padrão"> Prata(R$450/Ano)
+
+                <input type="radio"
+                name="plano"
+                id="plano3"
+                value="ouro"> Ouro(R$600/Ano)
+            </td>
+        </tr>
+        <tr>
+            <td width="136">
+                <label for="checkbox">Como você ficou sabendo de nós?</label>
+            </td>
+            <td>
+                <input type="checkbox"
+                name="box"
+                id="opcao1"
+                value="amigo"> Um amigo
+                <br >
+                <input type="checkbox"
+                name="box"
+                id="opcao2"
+                value="facebook"> Facebook
+                <br >
+                <input type="checkbox"
+                name="box"
+                id="opcao3"
+                value="twitter"> Twitter
+                <br >
+                <input type="checkbox"
+                name="box"
+                id="opcao4"
+                value="jornal"> Jornais
+                <br >
+                <input type="checkbox"
+                name="box"
+                id="opcao5"
+                value="pagina"> Páginas amarelas
+                <br >
+                <input type="checkbox"
+                name="box"
+                id="opcao2"
+                value="other"> Other:
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="text">Comentários
+                    <br />
+                    <small style="color: gray;">
+                        Deixe-nos saber se há algo mais que você deseja adicionar ao nosso Formulário de Adesão</small>
+                </label>
+            </td>
+            <td>
+                <textarea name="text" id="text"
+                rows="10"
+                cols="49"
+                maxlength="600"
+                wrap="soft"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="checkbox">Termos de Serviço*</label></td>
+            <td>
+                <input type="checkbox"
+                name="termo"
+                required
+                id="termo"> Eu concordo com os <a href="">termos de serviço</a>
+            </td>
+        </tr>
+        <tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <label for="text">Assinatura digital</label>
+                <br />
+                <small style="color: gray;">
+                    Ao enviar este Formulário de Adesão Online, eu certifico que as informações acima estão corretas e completas e concordo aqui em respeitas as T.S.
+                </small>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="/upload" method="post" enctype="multipart/form-data"></form>
+                <label for="foto"></label>
+                <input type="file"
+                id="foto"
+                name="foto"
+                accept=".pdf, image/*, .jpg, .png">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="enviar"></label>
+                <input type="submit"
+                value="Enviar Formulário de Adesão"
+                name="enviar"
+                id="enviar"
+                >
+            </td>
+        </tr>
+</body>
+</html>
