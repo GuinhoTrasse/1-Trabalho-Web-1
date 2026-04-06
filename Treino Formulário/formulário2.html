@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário 2</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <fieldset>  
+        <legend>Dados Pessoais</legend>
+            <table>
+                <tr>
+                    <td>
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" nome="nome" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="endereco">Endereço: </label>
+                        <input type="text" id="endereco" nome="endereco" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cidade">Cidade: </label>
+                        <input type="text" id="cidade" nome="cidade" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="estado">Estado: </label>
+                        <select id="estado" nome="estado" multiple-size="3" required>
+                            <option value="sp">São Paulo</option>
+                            <option value="bh">Bahia</option>
+                            <option value="mg">Minas Gerais</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+    </fieldset>
+    <br />
+    <fieldset>
+        <legend>Dados Profissionais</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="natureza">Natureza do Cargo</label><br />
+                        <input type="radio" name="gerencia" id="gerencia"> Gerência
+                        <input type="radio" name="financeiro" id="financeiro"> Financeiro
+                        <input type="radio" name="recepcao" id="recepcao"> Recepçâo
+                        <input type="radio" name="juridico" id="juridico"> Jurídico
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="interesse">Área de Interesse</label><br />
+                        <input type="checkbox" name="computacao" id="computacao"> Computação
+                        <input type="checkbox" name="biologia" id="biologia"> Biologia
+                        <input type="checkbox" name="ambiente" id="ambiente"> Meio Ambiente
+                        <input type="checkbox" name="engenheiro" id="Engenheiro"> Engenheiro
+                        <input type="checkbox" name="historia" id="historia"> História
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="curriculo">Mini-Currículo: </label>
+                        <textarea name="curriculo" id="curriculo" rows="5" cols="48"></textarea>
+                    </td>
+                </tr>
+            </table>
+    </fieldset>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
